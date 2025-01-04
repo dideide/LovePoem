@@ -16,16 +16,17 @@
 
         /* Poem Container */
         .container {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    padding: 30px;
-    max-width: 90%; /* Adjust for mobile */
-    margin: 50px auto;
-    position: relative;
-    border: 5px solid rgba(255, 105, 135, 0.5);
-    animation: pulse 2s infinite alternate;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            max-width: 600px;
+            margin: 100px auto;
+            position: relative;
+            border: 5px solid rgba(255, 105, 135, 0.5);
+            animation: pulse 2s infinite alternate;
+        }
 
         @keyframes pulse {
             from {
@@ -36,69 +37,69 @@
             }
         }
 
-       h1 {
-    color: #ff6f61;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-style: italic;
-}
-       p {
-    font-size: 1.1em; /* Smaller font on mobile */
-    line-height: 1.8;
-    color: #444444;
-    margin-bottom: 20px;
-}
+        h1 {
+            color: #ff6f61;
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            color: #444444;
+            margin-bottom: 20px;
+        }
 /* Romantic Designs on the Sides */
-
 .decorative-left, .decorative-right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 150px; /* Smaller decorative shapes */
-    background: linear-gradient(135deg, #ff6f61, #ffd1d1);
-    clip-path: path("M40,0 C70,0 80,20 80,40 C80,60 70,80 40,100 C10,120 0,140 0,160 C0,180 10,200 40,200 C70,200 80,180 80,160 C80,140 70,120 40,100 C10,80 0,60 0,40 C0,20 10,0 40,0 Z");
-}
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 80px;
+            height: 200px;
+            background: linear-gradient(135deg, #ff6f61, #ffd1d1);
+            clip-path: path("M40,0 C70,0 80,20 80,40 C80,60 70,80 40,100 C10,120 0,140 0,160 C0,180 10,200 40,200 C70,200 80,180 80,160 C80,140 70,120 40,100 C10,80 0,60 0,40 C0,20 10,0 40,0 Z");
+        }
 
-.decorative-left {
-    left: -70px;
-}
+        .decorative-left {
+            left: -100px;
+        }
 
-.decorative-right {
-    right: -70px;
-}
+        .decorative-right {
+            right: -100px;
+        }
 
         /* Floating and Pulsating Hearts */
-       .heart {
-    position: absolute;
-    width: 30px; /* Smaller hearts */
-    height: 30px;
-    background: linear-gradient(45deg, #ff6f61, #ff9a9e);
-    transform: rotate(-45deg);
-    animation: floatHeart 6s infinite ease-in-out;
-    opacity: 0.8;
-    z-index: 2;
-}
+        .heart {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #ff6f61, #ff9a9e);
+            transform: rotate(-45deg);
+            animation: floatHeart 6s infinite ease-in-out;
+            opacity: 0.8;
+            z-index: 2;
+        }
 
-.heart::before,
-.heart::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: inherit;
-    border-radius: 50%;
-}
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: inherit;
+            border-radius: 50%;
+        }
 
-       .heart::before {
-    top: -15px;
-    left: 0;
-}
+        .heart::before {
+            top: -20px;
+            left: 0;
+        }
 
-.heart::after {
-    left: 15px;
-    top: 0;
-}
+        .heart::after {
+            left: 20px;
+            top: 0;
+        }
 
         @keyframes floatHeart {
             0% {
@@ -140,14 +141,15 @@
         }
 
         /* Firefly Animation */
-       .firefly {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: radial-gradient(circle, #ffd700, rgba(255, 223, 0, 0.2));
-    border-radius: 50%;
-    animation: twinkle 5s infinite alternate ease-in-out, move 10s infinite;
-}
+        .firefly {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: radial-gradient(circle, #ffd700, rgba(255, 223, 0, 0.2));
+            border-radius: 50%;
+            animation: twinkle 5s infinite alternate ease-in-out, move 10s infinite;
+        }
+
         @keyframes twinkle {
             0% {
                 opacity: 0.5;
@@ -194,51 +196,52 @@
 
         /* Footer */
         footer {
-    text-align: center;
-    font-size: 0.8em;
-    color: #555555;
-    margin-top: 20px;
-    padding: 10px;
-    position: relative;
-}
-       .button {
-    background: linear-gradient(45deg, #ff6f61, #ff9a9e);
-    border: none;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-top: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
+            text-align: center;
+            font-size: 0.8em;
+            color: #555555;
+            margin-top: 20px;
+            padding: 10px;
+            position: relative;
+        }
+        .button {
+            background: linear-gradient(45deg, #ff6f61, #ff9a9e);
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
 
-       .button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
 
-/* Popup adjustments */
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px; /* Smaller popup */
-    height: 250px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    animation: fadeIn 0.5s;
-}
+        /* Gift Box Popup */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            animation: fadeIn 0.5s;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -248,10 +251,10 @@
             }
         }
 
-       .popup img {
-    width: 80px; /* Smaller gift box image */
-    animation: bounce 1.5s infinite;
-}
+        .popup img {
+            width: 100px;
+            animation: bounce 1.5s infinite;
+        }
 
         @keyframes bounce {
             0%, 100% {
@@ -262,23 +265,23 @@
             }
         }
 
-       .popup h2 {
-    color: #ff6f61;
-    font-size: 1.5em;
-    margin: 20px 0;
-}
+        .popup h2 {
+            color: #ff6f61;
+            font-size: 1.8em;
+            margin: 20px 0;
+        }
 
-.popup .close {
-    background: linear-gradient(45deg, #ff9a9e, #ff6f61);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 1em;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
+        .popup .close {
+            background: linear-gradient(45deg, #ff9a9e, #ff6f61);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
 
         .popup .close:hover {
             transform: scale(1.1);
@@ -286,26 +289,26 @@
         }
 
          /* Stars Animation */
-        .stars {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
+         .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
 
-.stars span {
-    position: absolute;
-    display: block;
-    width: 3px;
-    height: 3px;
-    background-color: white;
-    border-radius: 50%;
-    animation: twinkle 2s infinite ease-in-out;
-    opacity: 0;
-}
+        .stars span {
+            position: absolute;
+            display: block;
+            width: 5px;
+            height: 5px;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite ease-in-out;
+            opacity: 0;
+        }
 
         .stars span:nth-child(1) {
             top: 10%;
@@ -359,7 +362,6 @@
             font-size: 0.8em;
             color: #999999;
         }
-       
     </style>
 </head>
 <body>
@@ -429,4 +431,3 @@
     </script>
 </body>
 </html>
-
