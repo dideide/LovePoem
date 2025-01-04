@@ -13,21 +13,21 @@
             overflow-x: hidden;
             position: relative;
         }
-
+    
         /* Poem Container */
         .container {
             text-align: center;
             background: rgba(255, 255, 255, 0.9);
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-            padding: 30px;
-            max-width: 600px;
-            margin: 100px auto;
+            padding: 20px;
+            max-width: 90%;
+            margin: 40px auto;
             position: relative;
             border: 5px solid rgba(255, 105, 135, 0.5);
             animation: pulse 2s infinite alternate;
         }
-
+    
         @keyframes pulse {
             from {
                 box-shadow: 0 0 10px rgba(255, 105, 135, 0.5);
@@ -36,20 +36,73 @@
                 box-shadow: 0 0 20px rgba(255, 105, 135, 1);
             }
         }
-
+    
         h1 {
             color: #ff6f61;
-            font-size: 3em;
+            font-size: 2.5em;
             margin-bottom: 20px;
             font-style: italic;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
         }
-
+    
         p {
-            font-size: 1.3em;
+            font-family: 'Great Vibes', cursive, 'Georgia', serif;
+
+            font-size: 1.2em;
             line-height: 1.8;
             color: #444444;
             margin-bottom: 20px;
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: 0.5px;
         }
+        @media (max-width: 600px) {
+        .container {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+
+        .button {
+            padding: 12px 24px;
+            font-size: 1em;
+        }
+    }
+
+    .button {
+        background: linear-gradient(45deg, #ff6f61, #ff9a9e);
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-top: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+        text-align: center;
+        font-size: 0.8em;
+        color: #555555;
+        margin-top: 20px;
+        padding: 10px;
+    }
+        
 /* Romantic Designs on the Sides */
 .decorative-left, .decorative-right {
             position: absolute;
@@ -363,6 +416,8 @@
             color: #999999;
         }
     </style>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <body>
